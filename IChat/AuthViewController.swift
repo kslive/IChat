@@ -8,14 +8,39 @@
 import UIKit
 
 class AuthViewController: UIViewController {
+    private let logoImage = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleToFill)
+    
+    private let googleLabel = UILabel(text: "Get started with")
+    private let emailLabel = UILabel(text: "Or Sign up with")
+    private let alreadyOnboardLabel = UILabel(text: "Already onboard?")
+    
+    private let emailButton = UIButton(title: "Email",
+                                       backgroundColor: .buttonDark(),
+                                       titleColor: .white,
+                                       font: .avenir20(),
+                                       isShadow: false,
+                                       cornerRadius: 4)
+    private let loginButton = UIButton(title: "Login",
+                                       backgroundColor: .white,
+                                       titleColor: .buttonRed(),
+                                       font: .avenir20(),
+                                       isShadow: true,
+                                       cornerRadius: 4)
+    private let googleButton = UIButton(title: "Google",
+                                       backgroundColor: .white,
+                                       titleColor: .black,
+                                       font: .avenir20(),
+                                       isShadow: true,
+                                       cornerRadius: 4)
+    
+    
 }
 
-// обертка для ViewController, которая будет заниматься отображением
 import SwiftUI
 
-struct ViewControllerProvider: PreviewProvider {
+struct AuthViewControllerProvider: PreviewProvider {
     static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all) // игнорим SafeArea
+        ContainerView().edgesIgnoringSafeArea(.all)
     }
     
     struct ContainerView: UIViewControllerRepresentable {
