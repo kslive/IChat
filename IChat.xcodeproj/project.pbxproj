@@ -12,6 +12,7 @@
 		6BBEC339263DB98700196284 /* UIColor + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEC338263DB98700196284 /* UIColor + Ext..swift */; };
 		6BBEC341263DBBD900196284 /* UILabel + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEC340263DBBD900196284 /* UILabel + Ext..swift */; };
 		6BBEC346263DBCC600196284 /* UIImageView + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEC345263DBCC600196284 /* UIImageView + Ext..swift */; };
+		6BBEC353263DC07C00196284 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBEC352263DC07C00196284 /* ButtonFormView.swift */; };
 		6BD12EDB263DABBF002EF088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD12EDA263DABBF002EF088 /* AppDelegate.swift */; };
 		6BD12EDD263DABBF002EF088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD12EDC263DABBF002EF088 /* SceneDelegate.swift */; };
 		6BD12EDF263DABBF002EF088 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD12EDE263DABBF002EF088 /* AuthViewController.swift */; };
@@ -42,6 +43,7 @@
 		6BBEC338263DB98700196284 /* UIColor + Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ext..swift"; sourceTree = "<group>"; };
 		6BBEC340263DBBD900196284 /* UILabel + Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext..swift"; sourceTree = "<group>"; };
 		6BBEC345263DBCC600196284 /* UIImageView + Ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ext..swift"; sourceTree = "<group>"; };
+		6BBEC352263DC07C00196284 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		6BD12ED7263DABBF002EF088 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD12EDA263DABBF002EF088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD12EDC263DABBF002EF088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BBEC34A263DBF3E00196284 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6BBEC32E263DB61D00196284 /* UIButton + Ext..swift */,
+				6BBEC333263DB87D00196284 /* UIFont + Ext..swift */,
+				6BBEC338263DB98700196284 /* UIColor + Ext..swift */,
+				6BBEC340263DBBD900196284 /* UILabel + Ext..swift */,
+				6BBEC345263DBCC600196284 /* UIImageView + Ext..swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6BBEC34E263DBF4A00196284 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BBEC34A263DBF3E00196284 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6BD12ECE263DABBF002EF088 = {
 			isa = PBXGroup;
 			children = (
@@ -102,14 +124,11 @@
 				6BD12EDA263DABBF002EF088 /* AppDelegate.swift */,
 				6BD12EDC263DABBF002EF088 /* SceneDelegate.swift */,
 				6BD12EDE263DABBF002EF088 /* AuthViewController.swift */,
+				6BBEC352263DC07C00196284 /* ButtonFormView.swift */,
 				6BD12EE3263DABC0002EF088 /* Assets.xcassets */,
 				6BD12EE5263DABC0002EF088 /* LaunchScreen.storyboard */,
 				6BD12EE8263DABC0002EF088 /* Info.plist */,
-				6BBEC32E263DB61D00196284 /* UIButton + Ext..swift */,
-				6BBEC333263DB87D00196284 /* UIFont + Ext..swift */,
-				6BBEC338263DB98700196284 /* UIColor + Ext..swift */,
-				6BBEC340263DBBD900196284 /* UILabel + Ext..swift */,
-				6BBEC345263DBCC600196284 /* UIImageView + Ext..swift */,
+				6BBEC34E263DBF4A00196284 /* Extensions */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -246,6 +265,7 @@
 				6BBEC341263DBBD900196284 /* UILabel + Ext..swift in Sources */,
 				6BBEC346263DBCC600196284 /* UIImageView + Ext..swift in Sources */,
 				6BBEC32F263DB61D00196284 /* UIButton + Ext..swift in Sources */,
+				6BBEC353263DC07C00196284 /* ButtonFormView.swift in Sources */,
 				6BBEC339263DB98700196284 /* UIColor + Ext..swift in Sources */,
 				6BD12EDF263DABBF002EF088 /* AuthViewController.swift in Sources */,
 				6BD12EDB263DABBF002EF088 /* AppDelegate.swift in Sources */,

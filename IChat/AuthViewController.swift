@@ -11,7 +11,7 @@ class AuthViewController: UIViewController {
     private let logoImage = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleToFill)
     
     private let googleLabel = UILabel(text: "Get started with")
-    private let emailLabel = UILabel(text: "Or Sign up with")
+    private let emailLabel = UILabel(text: "Or sign up with")
     private let alreadyOnboardLabel = UILabel(text: "Already onboard?")
     
     private let emailButton = UIButton(title: "Email",
@@ -33,8 +33,57 @@ class AuthViewController: UIViewController {
                                        isShadow: true,
                                        cornerRadius: 4)
     
-    
+    override func viewDidLoad() {
+        view.backgroundColor = .white
+        
+        setupConstaints()
+    }
 }
+
+extension AuthViewController {
+    private func setupConstaints() {
+        setupLogoImage()
+        setupStackView()
+    }
+    
+    private func setupLogoImage() {
+        logoImage.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(logoImage)
+        
+        logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
+        logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    private func setupStackView() {
+        let stackView = UIStackView(arrangedSubviews: [getGoogleView(),
+                                                       getEmailView(),
+                                                       getLoginView()])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 40
+        
+        view.addSubview(stackView)
+        
+        stackView.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 160).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+        
+    }
+    
+    private func getGoogleView() -> UIView {
+        ButtonFormView(label: googleLabel, button: googleButton)
+    }
+    
+    private func getEmailView() -> UIView {
+        ButtonFormView(label: emailLabel, button: emailButton)
+    }
+    
+    private func getLoginView() -> UIView {
+        ButtonFormView(label: alreadyOnboardLabel, button: loginButton)
+    }
+}
+
+// MARK: SwiftUI
 
 import SwiftUI
 
